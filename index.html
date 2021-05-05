@@ -24,7 +24,8 @@
       </div> -->
     <a-scene 
         vr-mode-ui="enabled: false;"
-        embedded arjs = "sourceType:webcam;; detectionMode:mono_and_matrix;matrixCodeType:3x3_PARITY65; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
+        embedded arjs = "sourceType:webcam;  trackingMethod: best; maxDetectionRate: 60;
+        detectionMode:mono_and_matrix;matrixCodeType:3x3_PARITY65; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
         renderer ="antialias: true;  "
     >
         <a-assets>
@@ -47,7 +48,7 @@
            <img id="mountain_ly6" src="./assets/Mosque/ly6.png">
         </a-assets>
 
-        <a-marker type="barcode" value="5" smooth="true" >
+        <a-marker type="barcode" value="5" smooth="true" smoothTolerance="0.0001">
             
             
             
