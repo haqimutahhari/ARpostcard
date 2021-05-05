@@ -26,7 +26,7 @@
         vr-mode-ui="enabled: false;"
         embedded arjs = "sourceType:webcam;  trackingMethod: best; maxDetectionRate: 60;
         detectionMode:mono_and_matrix;matrixCodeType:3x3_PARITY65; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
-        renderer ="antialias: true;  "
+        renderer ="antialias: true; alpha: true; precision: medium; "
     >
         <a-assets>
            <img id="foto"         src="./assets/people2.png" >
@@ -214,7 +214,7 @@
           
         </a-marker>
         
-        <a-entity camera arjs-look-controls="smoothingFactor: 0.5"></a-entity>
+        <a-entity camera arjs-look-controls="smoothingFactor: 0.2"></a-entity>
        
     </a-scene>
     
