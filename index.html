@@ -29,6 +29,11 @@
         renderer ="antialias: true;logarithmicDepthBuffer: true; "
     >
         <a-assets>
+           <img id="awan1"       src="./assets/awan/awan1.png" >
+           <img id="awan2"       src="./assets/awan/awan2.png" >
+           <img id="awan3"       src="./assets/awan/awan3.png" >
+           <img id="awan4"       src="./assets/awan/awan4.png" >
+           <img id="awan5"       src="./assets/awan/awan5.png" >
            <img id="foto"         src="./assets/people2.png" >
            <img id="people_1"     src="./assets/people_1.png" >
            <img id="people_2"     src="./assets/people_2.png" >
@@ -37,8 +42,8 @@
            <img id="bulan"        src="./assets/Bg/Bulan.png" >
            <img id="langit"       src="./assets/Bg/Langit.png">
            <img id="logo"         src="./assets/logo.png">
-           <img id="text1"        src="./assets/textpng/Happy_Eid.png" >
-           <img id="text2"        src="./assets//textpng/Mubarak.png" >
+           <img id="text1"        src="./assets/textpng/HappyEid1.png" >
+           <img id="text2"        src="./assets//textpng/Mubarak3.png" >
            <img id="mosque1"      src="./assets/Mosque/mosque.png">
            <img id="mountain_ly1" src="./assets/Mosque/ly1.png">
            <img id="mountain_ly2" src="./assets/Mosque/ly2.png">
@@ -62,17 +67,17 @@
             material= "src:#langit; shader:flat; transparent: false;alphaTest:0.5;  opacity:0 "
             rotation ="-90 0 0"
             position="0 0.4 0"
-            animation__fadein="property:material.opacity; from: 0; to:1; dur: 600; delay:3000"
-            animation__slidein="property:position; from: 0 0.40 2; to: 0 0.4 0; ;dur: 600;delay:3000"
+            animation__fadein="property:material.opacity; from: 0; to:1; dur: 600; delay:3500"
+            animation__slidein="property:position; from: 0 0.40 2; to: 0 0.4 0; ;dur: 600;delay:3500"
             ></a-entity>
 
             <a-entity id="str_bg" class="layer" 
             geometry="primitive:plane; width :4.11; height:1";
             material= "src:#bintang; shader:flat; transparent: true;alphaTest:0.5; opacity:0"
             rotation ="-90 0 0"
-            position="0 0.44 0"
-            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3000"
-            animation__slidein="property:position; from:0 0.44 -1 ;to:0 0.44 0; easing:easeInOutExpo; ;dur: 900;delay:3000"
+            position="0 0.42 0"
+            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3500"
+            animation__slidein="property:position; from:0 0.42 -1 ;to:0 0.42 0; easing:easeInOutExpo; ;dur: 900;delay:3500"
             
             ></a-entity>
 
@@ -80,29 +85,71 @@
             geometry="primitive:plane; width :0.6; height:0.437";
             material= "src:#bulan; shader:flat; transparent: true;alphaTest:0.5; opacity:0"
             rotation ="-90 0 0"
-            position="1 0.15 -0.77"
-            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3000"
-            animation__slidein="property:position; from:0 0.45 -1.7 ;to:1 0.45 -0.77; easing:easeInOutExpo; dur:900; delay:3000"
+            position="1 0.45 -0.77"
+            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3500"
+            animation__slidein="property:position; from:0 0.45 -1.7 ;to:1 0.45 -0.77; easing:easeInOutExpo; dur:900; delay:3500"
             ></a-entity>
+
+            <!-- Awan- awanan -->
+            <a-entity id="awan_1" class="layer" 
+            geometry="primitive:plane; width :0.6; height:0.437";
+            material= "src:#awan1; shader:flat; transparent: true;alphaTest:0.47; opacity:0;blending:normal"
+            rotation ="-90 0 0"
+            position="2 0.47 -0.66"
+            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3500"
+            animation__slidein="property:position;from:1.2 0.47 -1.55; to: 1.2 0.47 -0.75 ; dur: 900;delay: 3500;"
+            animation__loopposition="property:position;from: 1.2 0.47 -0.75 ;to: 1.8 0.47 -0.75 ; loop:true; dir:alternate;dur:1500; easing:linear; delay:4500"
+            ></a-entity>
+
+            <a-entity id="awan_2" class="layer" 
+            geometry="primitive:plane; width :0.6; height:0.437";
+            material= "src:#awan2; shader:flat; transparent: true;alphaTest:0.19; opacity:0;blending:normal"
+            rotation ="-90 0 0"
+            position="1.4 0.46 -1.5"
+            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3500"
+            animation__slidein="property:position;from:1.4 0.46 -1.7; to:1.4 0.46 -1 ; dur: 900;delay: 3000;easing:easeInOutBack"
+            animation__loopposition="property:position;from: 1.4 0.46 -1 ;to: 2 0.46 -1; loop:true; dir:alternate;dur:1500; easing:linear; delay:4500"
+            ></a-entity>
+
+            <a-entity id="awan_3" class="layer" 
+            geometry="primitive:plane; width :0.6; height:0.437"
+            material= "src:#awan3; shader:flat; transparent: true;alphaTest:0.290; opacity:0;blending:addictive"
+            rotation ="-90 0 0"
+            position="1 0.46 -0.66"
+            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3500"
+            animation__slidein="property:position;from:-0.351 0.47 -1.65; to: -0.351 0.47 -0.996 ; dur: 900;delay: 3500;easing:easeInOutBack"
+            animation__loopposition="property:position;from: -0.351 0.47 -0.996 ;to: 0.095 0.47 -0.996 ; loop:true; dir:alternate;dur:2500; easing:linear; delay:4500"
+            ></a-entity>
+
+            <a-entity id="awan_4" class="layer" 
+            geometry="primitive:plane; width :0.76; height:0.377";
+            material= "src:#awan4; shader:flat; transparent: true;alphaTest:0.11; opacity:0;blending:addictive"
+            rotation ="-90 0 0"
+            position="1 0.46 -0.66"
+            animation__fadein="property:material.opacity; from: 0; to:1; dur: 900;delay:3500"
+            animation__slidein="property:position;from:-2 0.47 -1.26; to:-2 0.53 -0.66 ; dur: 900;delay: 3500;"
+            animation__loopposition="property:position;from: -2 0.53 -0.66 ;to: -1.3 0.53 -0.66 ; loop:true; dir:alternate;dur:2500; easing:linear; delay:4500"
+            ></a-entity>
+
+
 
             <!-- Layer depan -->
             <a-entity id="text1"  class="layer" 
            geometry="primitive:plane; width:2; height:1" 
-           material = "src:#text1; shader:flat; transparent:true ;alphaTest:0.5;opacity:0" 
+           material = "src:#text1; shader:flat; transparent:true ;alphaTest:0.24;opacity:0" 
            rotation ="-90 0 0"
            position="-1.027 1.3 1.064"
-           animation__slidein="property:position; from: -1.027 1.3 0.064; to : -1.027 1.3 1.064; dur: 600;delay:7000;"
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 600;delay:7000"
-           
+           animation__slidein="property:position; from: -1.027 1.3 0.064; to : -1.027 1.3 1.034; dur: 600;delay:7500;"
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 600;delay:7500"
            ></a-entity>
 
            <a-entity id="text2"  class="layer" 
            geometry="primitive:plane; width:2.8; height:1" 
-           material = "src:#text2; shader:flat; transparent:true ;alphaTest:0.5;opacity:0" 
+           material = "src:#text2; shader:flat; transparent:true ;alphaTest:0.24;opacity:0" 
            rotation ="-90 0 0"
            position="0.789 1.3 1.064"
-           animation__slidein="property:position; from: 0.789 1.3 2.064; to : 0.789 1.3 1.064; dur: 600;delay:7000;"
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 600;delay:7000"
+           animation__slidein="property:position; from: 0.789 1.3 2.064; to : 0.789 1.3 1.064; dur: 600;delay:7500;"
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 600;delay:7500"
            
            ></a-entity>
 
@@ -110,13 +157,15 @@
            geometry="primitive:plane; width:0.6; height:1" 
            material = "src:#logo; shader:flat; transparent:true ;alphaTest:0.5;opacity:0" 
            rotation ="-90 0 0"
-           position="0 1.36 0.8"
-           animation__fadein="property:material.opacity; from: 0; to:1; dur:1000; delay:5000"
-           animation__scalewidthIn="property:geometry.width; from: 0.001 ; to:0.43; dur:1000; delay:5000"
-           animation__scaleheightIn="property:geometry.height; from: 0.001 ; to:0.6; dur:1000; delay:5000"
-           animation__semislideout="property:position;from:0 1.36 0.8; to: 0 1.36 0.6; dur:1000; easing:easeInOutBack; delay: 6500"
-           animation__scalewidthout="property:geometry.width; from: 0.43 ; to:0.344; dur:1000; delay:6500"
-           animation__scaleheightout="property:geometry.height; from: 0.6 ; to:0.48; dur:1000; delay:6500"
+           position="0 1.36 0.56"
+           animation__fadein="property:material.opacity; from: 0; to:1; dur:1000; delay:5500"
+           animation__scalewidthIn="property:geometry.width; from: 0.001 ; to:0.33; dur:1000; delay:5500"
+           animation__scaleheightIn="property:geometry.height; from: 0.001 ; to:0.41; dur:1000; delay:5500"
+           animation__fadeout="property:material.opacity;from:1;to:0;dur:1000;delay:8400"
+           animation__fadeIn2="property:material.opacity;from:0;to:1;dur:500;delay:10500"
+           animation__semislideout="property:position;from:0 1.36 0.56; to: 0 1.36 -0.465; dur:1000; easing:easeInOutBack; delay: 10500"
+           animation__scalewidthout="property:geometry.width; from: 0.43 ; to:0.344; dur:1000; delay:10500"
+           animation__scaleheightout="property:geometry.height; from: 0.6 ; to:0.48; dur:1000; delay:10500"
            ></a-entity>
 
            
@@ -126,8 +175,8 @@
            material="src:#people_1;shader:flat;transparent:true;alphaTest:0.5;opacity:0"
            position="0 1.5 0"
            rotation ="-90 0 0"
-           animation__fadein="property:material.opacity;from:0; to:1; dur:1000; delay:8200"
-           animation__slidein="property:position;from: 0 1.5 1.5; to: 0 1.5 -0.25; easing:easeInOutCubic;dur:1000; delay:8200"
+           animation__fadein="property:material.opacity;from:0; to:1; dur:1000; delay:8700"
+           animation__slidein="property:position;from: 0 1.5 1.5; to: 0 1.5 0.3; easing:easeInOutCubic;dur:1000; delay:8700"
            ></a-entity>
 
            <a-entity id="people2" class="layer" 
@@ -135,8 +184,8 @@
            material="src:#people_2;shader:flat;transparent:true;alphaTest:0.5;opacity:0"
            position="0 1.46 0"
            rotation ="-90 0 0"
-           animation__fadein="property:material.opacity;from:0; to:1; dur:1000; delay:8700"
-           animation__slidein="property:position;from: 0 1.46 1.5; to: 0 1.46 -0.25; easing:easeInOutCubic;dur:1000; delay:8700"
+           animation__fadein="property:material.opacity;from:0; to:1; dur:1000; delay:9200"
+           animation__slidein="property:position;from: 0 1.46 1.5; to: 0 1.46 0.3; easing:easeInOutCubic;dur:1000; delay:9200"
            ></a-entity>
 
            <a-entity id="people3" class="layer" 
@@ -144,8 +193,8 @@
            material="src:#people_3;shader:flat;transparent:true;alphaTest:0.5;opacity:0"
            position="0 1.42 0"
            rotation ="-90 0 0"
-           animation__fadein="property:material.opacity;from:0; to:1; dur:1000; delay:9200"
-           animation__slidein="property:position;from: 0 1.42 1.5; to: 0 1.42 -0.25; easing:easeInOutCubic;dur:1000; delay:9200"
+           animation__fadein="property:material.opacity;from:0; to:1; dur:1000; delay:9700"
+           animation__slidein="property:position;from: 0 1.42 1.5; to: 0 1.42 0.3; easing:easeInOutCubic;dur:1000; delay:9700"
            ></a-entity>
 
             
@@ -155,8 +204,8 @@
            material = "src:#mosque1; shader:flat; transparent:true ;alphaTest:0.5;opacity:0" 
            rotation ="-90 0 0"
            position="0 1.2 0"
-           animation="property:position; from: 0 1.2 2; to : 0 1.2 0; dur: 1400;delay:3000;"
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1400;delay:3000"
+           animation="property:position; from: 0 1.2 2; to : 0 1.2 0; dur: 1400;delay:3500;"
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1400;delay:3500"
            ></a-entity>
 
 
@@ -165,8 +214,8 @@
            material = "src:#mountain_ly1; shader:flat ;transparent:true;alphaTest:0.5; opacity:0" 
            rotation ="-90 0 0"
            position="0 1 0"
-           animation="property:position; from: 0 1 2; to : 0 1 0; dur: 1350; delay:3000; "
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1350;delay:3000"
+           animation="property:position; from: 0 1 2; to : 0 1 0; dur: 1350; delay:3500; "
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1350;delay:3500"
            ></a-entity>
 
            <a-entity id="ly2" class="layer" 
@@ -174,8 +223,8 @@
            material = "src:#mountain_ly2; shader:flat; transparent:true;alphaTest:0.5 ; opacity:0" 
            rotation ="-90 0 0"
            position="0 0.9 0"
-           nimation="property:position; from: 0 0.9 2; to : 0 0.9 0; dur: 1300; delay:3000; "
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1300;delay:3000"
+           nimation="property:position; from: 0 0.9 2; to : 0 0.9 0; dur: 1300; delay:3500; "
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1300;delay:3500"
            ></a-entity>
 
            <a-entity id="ly3" class="layer" 
@@ -183,8 +232,8 @@
            material = "src:#mountain_ly3; shader:flat;transparent:true;alphaTest:0.5;opacity:0 " 
            rotation ="-90 0 0"
            position="0 0.8 0"
-           animation="property:position; from: 0 0.8 2; to : 0 0.8 0; dur: 1250; delay:3000; "
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1250;delay:3000"
+           animation="property:position; from: 0 0.8 2; to : 0 0.8 0; dur: 1250; delay:3500; "
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1250;delay:3500"
            ></a-entity>
 
            <a-entity id="ly4" class="layer" 
@@ -192,8 +241,8 @@
            material = "src:#mountain_ly4; shader:flat;transparent:true ;alphaTest:0.5;opacity:0" 
            rotation ="-90 0 0"
            position="0 0.7 0"
-           animation="property:position; from: 0 0.7 2; to : 0 0.7 0; dur: 1200;delay:3000;"
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1200;delay:3000"
+           animation="property:position; from: 0 0.7 2; to : 0 0.7 0; dur: 1200;delay:3500;"
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1200;delay:3500"
            ></a-entity>
 
            <a-entity id="ly5" class="layer" 
@@ -201,8 +250,8 @@
            material = "src:#mountain_ly5; shader:flat;transparent:true ;alphaTest:0.5; opacity:0" 
            rotation ="-90 0 0"
            position="0 0.6 0"
-           animation="property:position; from: 0 0.6 2; to : 0 0.6 0; dur: 1150;delay:3000; "
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1150;delay:3000"
+           animation="property:position; from: 0 0.6 2; to : 0 0.6 0; dur: 1150;delay:3500; "
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1150;delay:3500"
            ></a-entity>
            
            <a-entity id="ly6" class="layer" 
@@ -210,8 +259,8 @@
            material = "src:#mountain_ly6; shader:flat; transparent:true;alphaTest:0.5;opacity:0" 
            rotation ="-90 0 0"
            position="0 0.5 0"
-           animation="property:position; from: 0 0.5 2; to : 0 0.5 0; dur: 1100;delay:3000; "
-           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1110;delay:3000"
+           animation="property:position; from: 0 0.5 2; to : 0 0.5 0; dur: 1100;delay:3500; "
+           animation__fadein="property:material.opacity; from: 0; to:1; dur: 1110;delay:3500"
            ></a-entity>
 
           
